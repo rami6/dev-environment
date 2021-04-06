@@ -4,7 +4,8 @@
     - Windows: https://windowsterminalthemes.dev/
 
 ### Shell Options
-`setopt AUTO_CD`
+`setopt AUTO_CD`  
+`setopt APPEND_HISTORY`
 
 ### Alias
 Add a function under `.zsh_funcs`, then run `autoload <func name>`.
