@@ -1,5 +1,6 @@
 1. Install [Oh My Zsh](https://ohmyz.sh/)  
-1. Set a nice color scheme
+2. Set up [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+3. Set a nice color scheme
     - Mac (iTerm): https://iterm2colorschemes.com/
     - Windows: https://windowsterminalthemes.dev/
 
