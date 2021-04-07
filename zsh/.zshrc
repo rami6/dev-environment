@@ -115,3 +115,6 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="/usr/local/sbin:$PATH"
 
 fpath=( ~/.zsh_funcs "${fpath[@]}" )
+
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
