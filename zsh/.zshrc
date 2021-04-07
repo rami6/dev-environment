@@ -116,5 +116,10 @@ export PATH="/usr/local/sbin:$PATH"
 
 fpath=( ~/.zsh_funcs "${fpath[@]}" )
 
+# Make node work
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Prevent outputs like git log from disappearing after typing q
+export LESS="-Xr"
+
