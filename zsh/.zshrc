@@ -116,10 +116,9 @@ export PATH="/usr/local/sbin:$PATH"
 
 fpath=( ~/.zsh_funcs "${fpath[@]}" )
 
-# Make node work
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# Make node work (This was necessary for WSL2 Ubuntu, but wasn't for Mac)
+# export NVM_DIR=~/.nvm
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Prevent outputs like git log from disappearing after typing q
 export LESS="-Xr"
-
