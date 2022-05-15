@@ -106,6 +106,35 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias vimz="vim ~/.zshrc"
+alias rf="source ~/.zshrc"
+alias gitpf="git push -f"
+alias gitca="git commit --amend"
+alias gitaca="git add . && git commit --amend"
+alias gitc-="git checkout -"
+alias gitclean="git clean -fd"
+
+gitc() {
+    git checkout $1
+}
+
+gitcb() {
+    git checkout -b $1
+}
+
+gitpu() {
+    git push -u origin $1
+}
+
+gitcbm() {
+    git fetch origin main && git checkout -b $1 origin/main
+}
+
+ch() {
+    git cherry-pick $1
+}
+
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
