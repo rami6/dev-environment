@@ -107,6 +107,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+### Automatic part end (added by oh-my-zsh and powerlevel 10k) ###
+
 alias vimz="vim ~/.zshrc"
 alias rf="source ~/.zshrc"
 alias gitpf="git push -f"
@@ -135,19 +140,16 @@ ch() {
     git cherry-pick $1
 }
 
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-export PATH="/usr/local/sbin:$PATH"
-
 fpath=( ~/.zsh_funcs "${fpath[@]}" )
+
+# Prevent outputs like git log from disappearing after typing q
+export LESS="-Xr"
 
 # Make node work (This was necessary for WSL2 Ubuntu, but wasn't for Mac)
 # export NVM_DIR=~/.nvm
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# Prevent outputs like git log from disappearing after typing q
-export LESS="-Xr"
+# The following is unnecessary for my new machine.
+# eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+# source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+# export PATH="/usr/local/sbin:$PATH"
