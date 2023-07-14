@@ -136,8 +136,12 @@ gitcbm() {
     git fetch origin main && git checkout -b $1 origin/main
 }
 
-ch() {
+gitch() {
     git cherry-pick $1
+}
+
+com() {
+    git commit -m $1
 }
 
 fpath=( ~/.zsh_funcs "${fpath[@]}" )
