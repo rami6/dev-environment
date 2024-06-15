@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "Caribean night",
   "editor.renderWhitespace": "boundary",
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
@@ -7,6 +8,7 @@
     // "editor.formatOnSave": false,
     // "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.defaultFormatter": "vscode.typescript-language-features",
   "gitlens.keymap": "alternate",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -19,8 +21,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.historyExplorer.enabled": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.packageManager": "yarn",
   "emmet.triggerExpansionOnTab": true,
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "files.insertFinalNewline": true,
@@ -40,8 +40,12 @@
   },
   "cSpell.userWords": [
     "chakra",
+    "downloadjs",
+    "frontmatter",
     "gojs",
+    "gsap",
     "reduxjs",
+    "tailwindcss",
     "trpc",
     "ungroupable"
   ],
@@ -59,7 +63,28 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "eslint.validate": [
+    // "markdown",
+    "mdx",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "emojisense.languages": {
+    "markdown": true,
+    "mdx": true
+  },
+  "grammarly.files.include": ["**/*.md", "**/*.mdx"],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "prisma.showPrismaDataPlatformNotification": false,
+  "eslint.format.enable": true,
+  "eslint.useFlatConfig": true
 }
